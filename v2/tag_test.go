@@ -111,6 +111,7 @@ func resetMP3Tag() error {
 
 	tag.SetTitle("Title")
 	tag.SetArtist("Artist")
+	tag.SetAlbumArtist("AlbumArtist")
 	tag.SetAlbum("Album")
 	tag.SetYear("2016")
 	tag.SetGenre("Genre")
@@ -391,6 +392,7 @@ func TestEmptyTagWriteTo(t *testing.T) {
 
 	tag := NewEmptyTag()
 	tag.SetArtist("Artist")
+	tag.SetArtist("AlbumArtist")
 	tag.SetTitle("Title")
 
 	buf := new(bytes.Buffer)
