@@ -157,7 +157,7 @@ func TestCountLenSize(t *testing.T) {
 
 	// Check len of tag.AllFrames().
 	if len(tag.AllFrames()) != 13 {
-		t.Errorf("Expected: %v, got: %v", 11, len(tag.AllFrames()))
+		t.Errorf("Expected: %v, got: %v", 13, len(tag.AllFrames()))
 	}
 
 	// Check saved tag size by reading the 6:10 bytes of mp3 file.
